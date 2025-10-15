@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # class student:
 #     def __init__(self, ism, familya, baho):
 #         self.ism = ism
@@ -69,3 +70,11 @@ import pyautogui
 
 
 
+=======
+import pandas as pd
+import sys,os
+from Source.data_loader import data_load
+
+sys.path.append(r"bunyod123/week_4_project/Source/data_loader.py")
+
+>>>>>>> 42b013ea48d0025ff1955e22c1845b09becce627

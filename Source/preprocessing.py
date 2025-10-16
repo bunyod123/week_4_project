@@ -25,13 +25,13 @@ class Preprocessing:
     def dropColumn(self, column_name):
         try:
             if column_name in self.df.columns:
-                self.df = self.df.drop(columns=[column_name])
+                self.df = self.df.drop(columns=[column_name],axis=1)
                 logger.info(f"'{column_name}' ustuni tashlab yuborildi.")
             else:
-                logger.warning(f"'{column_name}' ustuni topilmadi, tashlab yuborilmadi.")
+                logger.warning(f"{column_name} ustuni topilmadi, tashlab yuborilmadi.")
             return self
         except Exception as e:
-            logger.error(f"Ustunni o‘chirishda xatolik: {e}")
+            logger.error(f"Ustunni ochirishda xatolik: {e}")
             raise e
     
 #--------------------------------------------------------------------------------

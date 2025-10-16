@@ -1,4 +1,7 @@
-from logger import get_logger
+import sys,os
+sys.path.append(r"C:\Users\bunyo\OneDrive\Desktop\git_project\4_week_project")
+
+from Source.logger import get_logger
 logger = get_logger("data loader", "data_loading.log")
 
 logger.info("Data yuklash boshqlandi.")

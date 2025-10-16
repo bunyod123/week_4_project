@@ -9,7 +9,8 @@ from sklearn.svm import SVR
 from logger import get_logger
 logger = get_logger('model_training', 'training.log')
 
-
+#--------------------------------------------------------------------------------------------------
+# class yaratamiz
 class ModelTrainer:
     def __init__(self, X, y, k_folds=6):
         self.X = X
@@ -17,6 +18,7 @@ class ModelTrainer:
         self.k_folds = k_folds
         logger.info(f"Training boshlandi: X={X.shape}, y={y.shape}, K={k_folds}")
 
+#-----------------------------------------------------------------------------------------------------------
         self.models = {
             "Linear Regression": LinearRegression(),
             "Decision Tree": DecisionTreeRegressor(random_state=99),
@@ -25,6 +27,8 @@ class ModelTrainer:
             "Gradient Boosting": GradientBoostingRegressor(random_state=77)
         }
 
+#---------------------------------------------------------------------------------------------------
+# funksiya
     def train_all(self):
         try:
             X_train, X_test, y_train, y_test = train_test_split(self.X, self.y, test_size=0.2, random_state=99)
@@ -53,6 +57,7 @@ class ModelTrainer:
                     "Test MAE": round(mae, 4)
                 })
 
+#----------------------------------------------------------------------------------------------------
                 logger.info(
                     f"{name} -> CV R2(avg): {avg_cv_r2:.3f} | Test R2: {r2:.3f} | MAE: {mae:.3f}"
                 )
@@ -64,3 +69,4 @@ class ModelTrainer:
         except Exception as e:
             logger.error(f"Training jarayonida xatolik: {str(e)}")
             raise e
+#--------------------------------------------------------------------------------------------------

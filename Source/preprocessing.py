@@ -75,7 +75,7 @@ class Preprocessing:
     def scaling(self):
         try:
 
-            num_cols = self.df.select_dtypes([include=])
+            num_cols = self.df.select_dtypes(include=[np.numbers]).columns.drop('Score').tolist()
             self.df[num_cols] = self.scaler.fit_transform(self.df[num_cols])
 
             logger.info("Scaling qilindi")

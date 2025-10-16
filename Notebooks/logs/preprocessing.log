@@ -1,3 +1,11 @@
 2025-10-16 14:17:08,352 - INFO - data - data yuklandi
 2025-10-16 14:24:42,508 - INFO - data - data yuklandi
 2025-10-16 14:26:26,571 - INFO - data - data yuklandi
+2025-10-16 14:32:33,435 - INFO - preprocessing jarayoni - Data Preprocessing boshlandi: (2000, 10)
+2025-10-16 14:33:33,373 - INFO - preprocessing jarayoni - Data Preprocessing boshlandi: (2000, 10)
+2025-10-16 14:33:33,413 - INFO - preprocessing jarayoni - 'World Rank' ustuni tashlab yuborildi.
+2025-10-16 14:33:33,445 - INFO - preprocessing jarayoni - Nan qiymatlar toldirildi
+2025-10-16 14:33:33,547 - INFO - preprocessing jarayoni - Encoding qilindi
+2025-10-16 14:33:33,590 - INFO - preprocessing jarayoni - Scaling qilindi
+2025-10-16 14:33:33,593 - INFO - preprocessing jarayoni - Log transforming qilindi
+2025-10-16 14:33:33,593 - INFO - data - Preprocessing tugadi. Shape: (2000, 9)

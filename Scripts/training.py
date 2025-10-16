@@ -9,11 +9,11 @@ import pandas as pd
 #---------------------------------------------------------------------------------------
 
 # Datasetni yuklash
-df = pd.read_csv('data/preprocessed/preprocessed_house_price_prediction.csv')
+df = pd.read_csv(r"C:\Users\bunyo\OneDrive\Desktop\git_project\4_week_project\Data\preprocessed_data\preprocessed_data.joblib")
 
-# target ustunni belgilang
-X = df.drop('target', axis=1)
-y = df['target']
+
+X = df.drop('Score', axis=1)
+y = df['Score']
 
 trainer = ModelTrainer(X, y, k_folds=6)
 results = trainer.train_all()

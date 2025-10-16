@@ -17,4 +17,6 @@ try:
     logger.info('Data set script file orqali yuklandi')
 except: 
     # Exception as e:
-    logger.info("Muammo bor data yuklashda")
+    logger.info("Muammo bor data yuklashda") 
+
+print(df)
